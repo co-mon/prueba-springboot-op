@@ -5,11 +5,16 @@ _Prueba técnica de realización de la parte backend de una aplicación e-commer
 ## 1) GET http://localhost:8080/api/carts/1
 
 Respuesta
-
 {
-    "id": 1, 
-    "description": "Producto 1", 
-    "amount": 2
+    "id": 1,
+    "products": [
+        {
+            "id": 1,
+            "description": "Producto 1",
+            "amount": 2
+        }
+    ],
+    "ttl": 1703781089076
 }
 
 ## 2) POST http://localhost:8080/api/carts/1/products
